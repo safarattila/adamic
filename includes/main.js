@@ -82,6 +82,7 @@ function clickHandler(e) {
             var navfour = document.querySelector("#m-c-4");
             var navfive = document.querySelector("#m-c-5");
             var navsix = document.querySelector("#m-c-6");
+             var navseven = document.querySelector("#m-c-7");
             var mySidenav = document.querySelector("#mySidenav");
             navIcon.classList.toggle("open");
             navfirst.classList.toggle("fadeInDown");
@@ -90,6 +91,7 @@ function clickHandler(e) {
             navfour.classList.toggle("fadeInDown");
             navfive.classList.toggle("fadeInDown");
             navsix.classList.toggle("fadeInDown");
+            navseven.classList.toggle("fadeInDown");
             mySidenav.classList.toggle("open-sidemenu");
           }
           
@@ -101,6 +103,7 @@ function clickHandler(e) {
             var navfour = document.querySelector("#m-c-4");
             var navfive = document.querySelector("#m-c-5");
             var navsix = document.querySelector("#m-c-6");
+            var navseven = document.querySelector("#m-c-7");
             var mySidenav = document.querySelector("#mySidenav");
             navIcon.classList.remove("open");
             navfirst.classList.remove("fadeInDown");
@@ -109,6 +112,7 @@ function clickHandler(e) {
             navfour.classList.remove("fadeInDown");
             navfive.classList.remove("fadeInDown");
             navsix.classList.remove("fadeInDown");
+            navseven.classList.remove("fadeInDown");
             mySidenav.classList.remove("open-sidemenu");
           }
 
