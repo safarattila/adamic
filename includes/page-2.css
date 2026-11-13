@@ -2739,10 +2739,10 @@ height:820px;}
   .ari__btn--light {width: 280px;}
   .ari__panel{
     grid-column: 1; grid-row: auto; aspect-ratio: auto;
-    padding-top: 60px;
+    padding-top: 50px;
     padding-left: var(--padvar);
     padding-right: var(--padvar);
-    padding-bottom: 80px;
+    padding-bottom: 90px;
     display:block;
     height: auto;
   }
@@ -2763,7 +2763,7 @@ height:820px;}
      padding-top: 60px;
     padding-left: var(--padvar);
     padding-right: var(--padvar);
-    padding-bottom: 80px;
+    padding-bottom: 90px;
     background-image: none;
   }
   .ari__lead{ text-align: left; margin-bottom: 32px; }
