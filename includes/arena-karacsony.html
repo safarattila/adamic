@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="hu">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Aréna Karácsonyi Kampány - Adamic</title>
+      <meta name="description" content="A karácsony a szeretet és meghittség ünnepe. Azonban az Arena Mall egy sajátos, nem mindennapi kampánnyal készült erre az ünnepre.">
+      <link rel="stylesheet" href="includes/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" type="text/css" href="includes/page.css?3">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <style>
+         .team-pic-page {grid-template-columns: 120px 120px 120px}
+         a {margin-bottom:0;}
+         .team-pic-page div {padding-top:32px;}
+         .team-page h4 {font-size:37px;}
+         @media screen and (max-width: 1850px){ .team-page h4 {font-size: clamp(1.9rem, 1.5vw, 37px);}
+         .team-pic-page div {padding-top:26px;}}
+         @media screen and (max-width: 1100px){
+         .team-adamic {display:unset; padding-left:0; padding-right:0;}
+         .team-page {display:unset; text-align:left;}
+         .team-pic-page {grid-template-columns: repeat(auto-fit, minmax(119px, 1fr));  
+         grid-auto-flow: dense; width:auto; padding-left:var(--padvar);padding-right:var(--padvar);}
+         .team-page h4 {margin-bottom:30px;font-size: 2rem;
+         padding-bottom: 5px;
+         padding-left: var(--padvar);}
+         .team-pic-page p {color:black;}
+         .team-works {padding-top: 60px;}
+         }
+         .team-pic-page div {
+    padding-top: 0;
+}
+@media screen and (max-width: 350px){ .g-recaptcha {width:200px!important; }}
+      </style>
+   </head>
+   <body onload="lineFunction()">
+      <div class="main">
+         <div class="menu-page" style="background-blend-mode: color-burn; background-image:   linear-gradient(
+            rgba(0, 11, 41, 0.55), 
+            rgba(0, 11, 41, 0.55)
+            ),url(img/xn2.png);">
+            <div class="da-line"></div>
+            <div class="mm">
+               <div class="mobile-menu">
+                  <a href="" class="moba">
+                  </a>
+                  <div class="menu-icon" onclick="openNav()">
+                     <div id="nav-icon1" class="greeee">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                     </div>
+                  </div>
+               </div>
+               <a href="/" class="main-mob"><img src="img/adamic-logo-yellow.png" class="main-mob-logo-c"
+                  alt="Adamic logó"></a>
+               <div id="mySidenav" class="sidenav">
+                  <a href="/#rolunk" onclick="closeNav()" id="m-c" class="animated scroller">Rólunk</a>
+                  <a href="/#csapatunk" onclick="closeNav()" id="m-c-2" class="animated-2 scroller">Csapatunk</a>
+                  <a href="/#munkaink" onclick="closeNav()" id="m-c-3" class="animated-3 scroller">Munkáink</a>
+                  <a href="/#kapcsolat" onclick="closeNav()" id="m-c-4" class="animated-4">Karrier</a>
+                  <a href="/#kapcsolat" onclick="closeNav()" id="m-c-5" class="animated-5 scroller">Kapcsolat</a>
+                  <a href="#" onclick="closeNav()" id="m-c-6" class="animated-6" style="display:none;">Ingyenes
+                  próbalencse</a>
+               </div>
+            </div>
+            <div class="menu-top">
+               <div class="top-right-menu">
+                  <a href="/#kapcsolat">Karrier</a>
+                  <a href="/#kapcsolat" class="scroller">Kapcsolat</a>
+               </div>
+            </div>
+            <div class="adamic-hero">
+               <div class="menu-side">
+                  <a href="/" class="adamic-logo"><img src="img/logo-white-a.png" class="logo"></a>
+                  <div class="side-menu">
+                     <a href="/#rolunk" class="scroller">rólunk</a>
+                     <a href="/#csapatunk" class="scroller">csapat</a>
+                     <a href="/#munkak" class="scroller">munkák</a>
+                  </div>
+                  <img src="img/down-logo-white.png" class="another-logo">
+               </div>
+               <div class="adamic-movie">
+                  <div class="title-page">
+                     <h1 id="firstLine">Arena Mall Karácsonyi kampány 2019.</h1>
+                     <span id="longLine" class="titleline"></span>
+                     <span class="mobline"></span>
+                     <p id="p-line">A rossz gyerekeknek</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="yellow">
+            <div class="yellow-content">
+               <h2 class="yellow-h">Összefoglaló</h2>
+               <p class="yellow-p">A karácsony a szeretet és meghittség ünnepe. Azonban az Arena Mall egy sajátos, nem mindennapi kampánnyal készült erre az ünnepre. A projekt során a rendhagyó karácsonyi kampányt kellett adaptálnunk az itthoni társadalmi elvárásokra.</p>
+               <div class="manager-page">
+                  <div>
+                     <p>Morvai Éva<br>
+                     <p class="pm">Projekt Manager</p>
+                  </div>
+                  <img src="img/people/morvai.jpg" class="employee" style="padding-top:0;" alt="Projekt Manager fotó">
+               </div>
+            </div>
+         </div>
+         <div class="video-page">
+            <img src="img/vidb.png" class="vidb" alt="projekt videó">
+            <img src="img/play.svg" class="play open-video" alt="lejátszás">
+         </div>
+         <div class="team-works">
+            <div class="results-adamic">
+               <div class="results-page">
+                  <h4>
+                     Feladatunk:
+                  </h4>
+                  <p>&bull; Kreatív koncepció adaptálása</p>
+                  <p>&bull; Kreatív tervezés</p>
+                  <p>&bull; Szövegírás</p>
+                  <p>&bull; Management</p>
+                  <p>&bull; Nyereményjáték management</p>
+               </div>
+            </div>
+            <div class="right-page">
+               <div class="data-page">
+                  <div class="client-page">
+                     <h4>
+                        Megbízó
+                     </h4>
+                     <p>Symmetry Arena Kft.</p>
+                  </div>
+                  <div class="brand-page">
+                     <h4>
+                        Márka
+                     </h4>
+                     <p>Arena Mall</p>
+                  </div>
+               </div>
+               <a href="https://www.arenamall.hu/kvizjatek/" target="_blank" style="color:var(--yellow); font-weight:400;">www.arenamall.hu/kvizjatek/</a>
+            </div>
+         </div>
+         <div class="team-adamic-back">
+            <div class="team-adamic">
+               <div class="team-page">
+                  <h4>
+                     Csapat:
+                  </h4>
+               </div>
+               <div class="team-pic-page">
+                  <div>
+                     <img src="img/people/zavodni.jpg" class="employee" alt="Csapattag fotó">
+                     <p>Réka</p>
+                  </div>
+                  <div>
+                     <img src="img/people/lippert.jpg" class="employee" alt="Csapattag fotó">
+                     <p>Gábor</p>
+                  </div>
+                  <div>
+                     <img src="img/people/kerekgyarto.jpg" class="employee" alt="Csapattag fotó">
+                     <p>Réka</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="black-part-background">
+            <img src="img/bb-back.png" class="b-b-b"> 
+            <div class="black-part">
+               <h2 class="black-part-title b-h">
+                  Mi volt az ügyfél<br>problémája?
+               </h2>
+               <p class="b-p">
+                  2019. év végén az Arena Mall a londoni kreatív ügynöksége javaslatára egy teljesen rendhagyó és kicsit provokatív karácsonyi kreatív koncepciót szeretett volna megvalósítani.
+                  A kampány ötlet azokat szólította meg, akik ""rossz gyerekek"", a kampány szlogen ""Rossz gyerekeknek. Minden amit megérdemelsz.
+                  Mivel Magyarországon a klasszikus karácsony felfogás az uralkodó, az Arena Mall extravagáns karácsonyi koncepcióját adaptálnunk kellett a magyarországi piaci és társadalmi elvárásokhoz közelítve.
+                 </p>
+               <img src="img/a.png">
+            </div>
+         </div>
+         <div class="black-part-background gray-part">
+            <div class="black-part">
+               <h2 class="black-part-title b-h">
+                  Milyen megoldást<br>hoztunk?		
+               </h2>
+               <p class="b-p">
+                  Mivel a londoni koncepció eredeti formában történő megjelenítése nehezen lett volna befogadható a hazai közönség számára, ezért az adaptációnál az eredeti koncepció visualját olyan mögöttes tartalommal ruháztuk fel, amely nem csak a “rosszaságra” fókuszál, hanem az emberekben meglévő kettősségre, azaz mindenkiben megvan a jó és “rossz” is, és csak rajtunk áll, hogy épp melyik oldalunkra hallgatunk. Erre a kettősségre építettük a kampány kommunikációját azzal a felütéssel, hogy ""Te jó voltál, vagy rossz voltál?"". Melyik oldaladra hallgattál többször idén? 
+                  <br>
+                  Ehhez játékos social media tartalmakat készítettünk, a kamány landing oldalán pedig létrehoztunk egy ajándék generátort, mely ""megállapította"", hogy az adott személy, akiről épp szeretnénk tudni, vajon jó volt-e vagy ""rossz"", és ehhez mérten ajánlottunk Arena Mallban megvásárolható ajándék ötleteket.		
+               </p>
+               <img src="img/gray.png">
+            </div>
+         </div>
+         <div class="black-part-background gray-part another-part">
+            <div class="black-part gray-part-two">
+               <h2 class="black-part-title b-h">
+                  Mi lett<br>a végeredmény?		
+               </h2>
+               <p class="b-p">A koncepció sikeres átültetése mellett az online tér teljes kihasználásával, landing oldal létrehozásával, ajándék generátorral, instagram nyereményjátékkal, social media kommunikációval, és banneres megjelenésekkel valósítottuk meg a kampányt.
+                  A media mixben található PPC hirdetésekkel több, mint 3.8 millió embert értünk el.
+                  A karácsonyi videó megtekintése 110.000 fölötti a Youtube-on.
+                  A landing oldalon az ajándék generátor játékkal több, mint 1000 alkalommal játszottak az érdeklődők.                    
+               </p>
+               <img src="img/img-three.png">
+            </div>
+         </div>
+         <div class="close">
+            <a href="/#munkak" class="comp">
+            <img src="img/x.png" class="hovx">
+            </a>
+            <a href="/#munkaink" class="mob">
+               <img src="img/x.png" class="hovx">
+               </a>
+            <p>Vissza a munkákhoz</p>
+         </div>
+         <form method="post" name="frm_contact" id="frm_contact" enctype="multipart/form-data">
+            <script src='https://www.google.com/recaptcha/api.js?hl=hu'></script>
+                    <div class="contact-bg" id="kapcsolat">
+                        <div class="contact-container">
+                            <div class="adamic-info">
+                                <img src="img/adamic-bottom-logo.png" class="bottomlogo" alt="Adamic logó">
+                                <div class="worktogether">
+                                    <img src="img/wortogether.png" class="workpic" alt="Dolgozzunk együtt!">
+                                    <div class="infos">
+                                        <a href="mailto:hello@adamic.hu">hello@adamic.hu</a>
+                                        <a href="tel:+3618982575">+36 1 898 2575</a>
+                                        <a href="https://goo.gl/maps/P3WcZV4ec8kfrmAj9" target="_blank" class="address">1116
+                                            Budapest<br>Barázda utca 42. 3.fl</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-inputs">
+                                <input class="myinput2" name="name" id="name" value="" placeholder="Név" type="text"
+                                    maxlength="255">
+                                <input class="myinput2" name="email" id="email" value="" placeholder="Email" type="text"
+                                    maxlength="255">
+                                <input class="myinput2" name="phone" id="phone" value="" placeholder="Telefon" type="tel"
+                                    maxlength="25">
+                                <textarea class="mytextarea2" id="message" name="message" placeholder="Üzenet"></textarea>
+                                <div class="mybutton-container2">
+                                 
+                                        <div class="g-recaptcha" data-theme="dark" style="transform:scale(0.7);-webkit-transform:scale(0.7);transform-origin:0 0;-webkit-transform-origin:0 0;" data-sitekey="6LfNXEMUAAAAAC0DfUZJ5ImQhnsOGvjClxLFOLT2"></div>
+                             
+                                    <button class="isend">küldés</button>
+                                    <p id="contact-response" class="error-msg-box" style="display:none;"></p>
+                                </div>
+                            </div>
+                            <div class="infos-two">
+                                <a href="mailto:hello@adamic.hu">hello@adamic.hu</a>
+                                <a href="tel:+3618982575">+36 1 898 2575</a>
+                                <a href="https://goo.gl/maps/P3WcZV4ec8kfrmAj9" target="_blank" class="address-two">1116
+                                    Budapest<br> Barázda utca 42. 3.fl</a>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+      <footer></footer>
+      <script src="includes/jquery-3.5.1.min.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+            $("#frm_contact").submit(function(event){
+               event.preventDefault();
+               var contactstring = $(this).serialize();
+              $.ajax({
+                     type: "POST",
+                     url: "ajax.php",
+                     data: contactstring,
+                     cache: false,
+                     success: function(html){
+                     if (html == '1') {
+                        grecaptcha.reset();
+                       $("#contact-response").css("display", "block");
+                        $("#contact-response").html('Üzenet sikeresen továbbítva!');
+                       $("#name").val(''); $("#email").val(''); $("#message").val(''); $("#phone").val('');
+                     }
+                     else {
+                        grecaptcha.reset();
+                       $("#contact-response").css("display", "block");
+                       $("#contact-response").html(html);
+                     }
+                   }
+               });
+              return false;
+            });
+         });
+         </script>
+      <script src="includes/menu.js"></script>
+      <script src="includes/jquery.fancybox.min.js?2"></script> 
+   
+      <script>
+         function lineFunction() { 
+         const element = document.getElementById('firstLine');
+         const elementTwo = document.getElementById('longLine');
+         const elementThree = document.getElementById('p-line');
+         const positionInfo = element.getBoundingClientRect();
+         const positionInfoTwo = elementThree.getBoundingClientRect();
+         const widthOne = positionInfo.width;
+         const widthTwo = positionInfoTwo.width;
+         if (widthOne > widthTwo) {
+         document.documentElement.style.setProperty('--wth', widthOne + 'px');
+         }
+         
+         else  {
+         document.documentElement.style.setProperty('--wth', widthTwo + 'px');
+         }
+         }
+         
+         var globalResizeTimer = null;
+         
+         $(window).resize(function() {
+         if(globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
+         globalResizeTimer = window.setTimeout(function() {
+         lineFunction();
+         }, 200);
+         });
+         
+         
+         function openNav() {
+         var navIcon = document.querySelector("#nav-icon1");
+         var navfirst = document.querySelector("#m-c");
+         var navsec = document.querySelector("#m-c-2");
+         var navth = document.querySelector("#m-c-3");
+         var navfour = document.querySelector("#m-c-4");
+         var navfive = document.querySelector("#m-c-5");
+         var navsix = document.querySelector("#m-c-6");
+         var mySidenav = document.querySelector("#mySidenav");
+         navIcon.classList.toggle("open");
+         navfirst.classList.toggle("fadeInDown");
+         navsec.classList.toggle("fadeInDown");
+         navth.classList.toggle("fadeInDown");
+         navfour.classList.toggle("fadeInDown");
+         navfive.classList.toggle("fadeInDown");
+         navsix.classList.toggle("fadeInDown");
+         mySidenav.classList.toggle("open-sidemenu");
+         }
+         
+         function closeNav() {
+         var navIcon = document.querySelector("#nav-icon1");
+         var navfirst = document.querySelector("#m-c");
+         var navsec = document.querySelector("#m-c-2");
+         var navth = document.querySelector("#m-c-3");
+         var navfour = document.querySelector("#m-c-4");
+         var navfive = document.querySelector("#m-c-5");
+         var navsix = document.querySelector("#m-c-6");
+         var mySidenav = document.querySelector("#mySidenav");
+         navIcon.classList.remove("open");
+         navfirst.classList.remove("fadeInDown");
+         navsec.classList.remove("fadeInDown");
+         navth.classList.remove("fadeInDown");
+         navfour.classList.remove("fadeInDown");
+         navfive.classList.remove("fadeInDown");
+         navsix.classList.remove("fadeInDown");
+         mySidenav.classList.remove("open-sidemenu");
+         }
+         
+
+         $(document).ready(function () {
+            $('.open-video').click(function () {
+            $.fancybox.open([{
+             src: 'https://www.youtube.com/watch?v=kKekIFWCnuwvq=hd1080',  
+            },
+            ], {
+             loop: false
+            });
+            });   });
+            
+         
+      
+      </script>
+   </body>
+</html>

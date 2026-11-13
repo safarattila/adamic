@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adamic</title>
+    <meta name="description" content="Full service ügynökség - hogy mindenkivel megtaláld a közös nyelvet a digitális világban!">
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" type="text/css" href="includes/slick.css?1">
+    <link href="includes/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="includes/page-2.css?18">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        /*    .op-anim {  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeItOut;
+    animation-name: fadeItOut;}
+@-webkit-keyframes fadeItOut {
+  0% {
+      transform:scale(1);
+      opacity: 1;
+  }
+  to {
+    transform:scale(0);
+      opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    transform:scale(1);
+      opacity:1;
+  }
+  to {
+    transform:scale(0);
+      opacity: 0;
+     
+  }
+}*/
+
+        .top-right-menu {
+            width: auto !important;
+            padding-right: 60px !important;
+        }
+
+        .mobs {
+            padding: 13px 8px 13px 8px;
+        }
+
+        .animated-6 {
+            animation-delay: 0.2s;
+            -webkit-animation-duration: 1.8s;
+            animation-duration: 1.8s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            opacity: 0;
+        }
+
+        .social-logos-container.mobs img {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        .social-logos-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .social-logos-container a {
+            display: grid;
+            padding: 0 !important;
+        }
+
+        .social-logos-container img {
+            margin-left: 7px;
+            margin-right: 7px;
+            color: white;
+        }
+
+        .social-logos-container svg {
+            fill: #fff;
+            color: white;
+        }
+
+        .fb-logo:hover {
+            filter: invert(35%) sepia(23%) saturate(1362%) hue-rotate(182deg) brightness(90%) contrast(92%);
+            transform: scale(1.1);
+        }
+
+        .in-logo:hover {
+            filter: brightness(0) saturate(100%) invert(35%) sepia(90%) saturate(4775%) hue-rotate(324deg) brightness(94%) contrast(88%);
+            transform: scale(1.1);
+        }
+
+        .li-logo:hover {
+            filter: invert(35%) sepia(57%) saturate(1223%) hue-rotate(166deg) brightness(92%) contrast(91%);
+            transform: scale(1.1);
+        }
+
+        .social-logos-container img {
+            transition: transform .4s;
+        }
+
+        .inner-part {
+            position: relative;
+        }
+
+        .what-manager {
+            padding-bottom: 48px
+        }
+
+        .button13 {
+            white-space: nowrap;
+        }
+
+        .whathappened {
+            display: none;
+        }
+
+        .noplay {
+            display: none !important;
+        }
+
+        @media screen and (max-width: 1850px) {
+            .card-outer p.what-manager {
+                font-size: 15px;
+            }
+        }
+
+        @media screen and (max-width: 1500px) {
+            .card-outer p.what-manager {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 1100px) {
+            .card-outer p.what-manager {
+                font-size: 13px;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .card-outer p.what-manager {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 350px) {
+            .g-recaptcha {
+                width: 200px !important;
+            }
+        }
+
+        #cp-bg {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            opacity: 0.9;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: -100;
+            display: none;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .cp-close-button {
+            display: none;
+        }
+
+        #cp-content {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #222;
+            font-family: 'Roboto', sans-serif;
+            display: none;
+            color: #fff;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+            z-index: 9998;
+            max-width: 1920px;
+
+            overflow: hidden;
+        }
+
+        #cp-content-header {
+
+            font-size: 18px;
+            color: #fff;
+            font-weight: bold;
+            padding: 24px 15px 1px 15px;
+
+            max-width: 1580px;
+            margin: auto;
+        }
+
+        #cp-content-text {
+            color: var(--cp-blue);
+            font-size: 14px;
+            padding: 12px 15px 12px 15px;
+            max-width: 1580px;
+            margin: auto;
+
+            line-height: 18px;
+        }
+
+        #cp-content-text a {
+            color: var(--cp-blue);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #cp-content-text a:hover {
+            text-decoration: underline;
+        }
+
+        #cp-content-btn {
+            width: 130px;
+            text-align: center;
+            background-color: var(--yellow);
+            color: #000;
+            text-shadow: none;
+            transition: all .3s ease;
+            font-size: 15px;
+            padding: 6px 10px 6px 10px;
+            cursor: pointer;
+            margin: 10px 150px 20px 10px;
+            float: right;
+        }
+
+
+        .cp-cover {
+            max-width: 1600px;
+        }
+
+        @media all and (max-width: 1900px) {
+            #cp-content {
+                width: 25%;
+                bottom: 1.3%;
+                right: 1.3%;
+                box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+            }
+
+            #cp-content-header,
+            #cp-content-text {
+                max-width: 90%;
+            }
+
+            #cp-content-btn {
+                margin-right: 11%;
+                margin-top: 3px;
+            }
+
+            #cp-content-header {
+                padding-top: 24px;
+            }
+        }
+
+        @media all and (max-width: 1190px) {
+            #cp-content {
+                width: 100%;
+                bottom: 0;
+                right: unset;
+                box-shadow: none;
+            }
+
+            #cp-content-header,
+            #cp-content-text {
+                max-width: calc(100% - 180px);
+
+            }
+
+            #cp-content-header {
+                padding-top: 24px;
+            }
+
+            #cp-content-btn {
+                margin-right: var(--padvar);
+                margin-top: 10px;
+            }
+
+            .cp-close-button {
+                right: var(--padvar);
+            }
+        }
+
+
+        .maptopspacer {
+            padding: 10px;
+        }
+
+        @media all and (max-width: 650px) {
+
+            #cp-content-header,
+            #cp-content-text {
+                max-width: 87%;
+            }
+
+        }
+
+        @media all and (max-width: 420px) {
+            #cp-content-header {
+                font-size: 17px;
+            }
+
+            .cp-close-button {
+                top: 15px;
+            }
+        }
+
+        .mail {
+            height: 48px;
+            transition: transform .24s ease-in-out;
+            position: absolute;
+            bottom: 25px;
+            right: 20px;
+            /*filter .4s  linear, -webkit-filter .4s  linear;*/
+        }
+
+        .mail:hover {
+            transform: scale(1.2);
+            /* filter: brightness(0);*/
+        }
+
+        @media screen and (max-width: 1850px) {
+            .mail {
+                height: 39px;
+                height: clamp(39px, 2.5vw, 48px);
+            }
+
+            .what-manager {
+                padding-bottom: 39px;
+                padding-bottom: clamp(39px, 2.5vw, 48px);
+            }
+        }
+
+        @media screen and (max-width: 1180px) {
+            .mail {
+                height: 39px;
+            }
+
+            .mail:hover {
+                transform: none;
+                /* filter: none;*/
+            }
+
+            .what-manager {
+                padding-bottom: 39px;
+            }
+        }
+
+
+        .new-work-container {
+            width: 1280px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 104px;
+            padding-bottom: 20px;
+
+            color: white;
+        }
+
+        .ourskills {
+            position: relative;
+        }
+
+        .ourskills P {
+            font-size: 19px;
+            line-height: 1.2;
+            font-weight: 300;
+        }
+
+        .thingsweknow {
+            position: absolute;
+            top: 30px;
+            left: 167px;
+            position: absolute;
+            color: var(--yellow);
+            top: 30px;
+            left: 182px;
+            letter-spacing: 1px;
+            font-size: 43px;
+            font-weight: 600;
+        }
+
+        .bricks {
+            margin-bottom: 50px;
+        }
+
+        .magno {
+            height: 980px;
+        }
+
+        .stat {
+            width: 170px;
+            height: auto;
+            margin-top: 39px;
+        }
+
+        .media {
+            width: 179px;
+            height: auto;
+            margin-top: 39px;
+        }
+
+        .content {
+            width: 189px;
+            height: auto;
+            margin-top: 0;
+        }
+
+        .stat-th {
+            top: 109px;
+            left: 167px;
+        }
+
+        .media-th {
+            top: 109px;
+            left: 176px;
+        }
+
+        .content-th {
+            top: 109px;
+            left: 144px;
+        }
+
+        b {
+            font-weight: 600;
+        }
+
+        .new-work-background h2 {
+            color: white;
+            font-size: 52px;
+            font-weight: 700;
+            padding-top: 100px;
+            margin-bottom: 67px;
+            text-align: center;
+            position: relative;
+            z-index: 3000;
+        }
+
+        .ourskills {
+            z-index: 3000;
+        }
+
+        .new-work-background h2 span:after {
+            content: "";
+            width: 99%;
+            height: 41px;
+            background-image: url(img/adamic-weblayout-amihez-ertunk-stripes.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* top: 10px; */
+            left: -3px;
+            z-index: -1;
+            bottom: 0;
+            position: absolute;
+        }
+
+        .new-work-background h2 span {
+            position: relative;
+            display: inline-block;
+            z-index: 120;
+        }
+
+        .new-work-background {
+            height: 980px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(img/adamic-weblayout-amihez-ertunk-bg.jpg);
+        }
+
+        .buttonnew {
+            border: 2px solid #ffd630;
+            color: #ffffff;
+            text-decoration: none;
+            z-index: 280;
+            position: relative;
+            display: block;
+            width: max-content;
+            margin: auto;
+            padding: 14px 30px;
+            position: relative;
+            font-size: 25px;
+            font-weight: 700;
+            margin-top: 93px;
+            cursor: pointer;
+        }
+
+
+        .buttonnew:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0;
+            background-color:
+                /*rgba(255,255,255,0.25)*/
+                var(--yellow);
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5);
+        }
+
+        .buttonnew:hover:after {
+            opacity: 0.92;
+            -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+        }
+
+        .content-two {
+            display: none;
+        }
+
+        @media only screen and (max-width: 1850px) {
+            .new-work-background h2 {
+                font-size: clamp(2.9rem, 2.708vw, 52px);
+            }
+
+            .magno {
+                height: 980px;
+            }
+
+            .new-work-container {
+                max-width: 1280px;
+                width: 82%;
+                grid-gap: 7%;
+            }
+
+            .thingsweknow {
+                font-size: clamp(36px, 2.240vw, 43px)
+            }
+
+            .ourskills p {
+                font-size: clamp(16px, 0.990vw, 19px);
+                line-height: 1.3;
+            }
+
+            .buttonnew {
+                font-size: clamp(25px, 1.406vw, 27px);
+                padding: 14px 30px;
+                margin-top: 81px;
+            }
+        }
+
+        @media only screen and (max-width: 1690px) {
+            .new-work-container {
+                width: 87%;
+            }
+        }
+
+        @media only screen and (max-width: 1180px) {
+            .new-work-container {
+                width: 87%;
+            }
+
+            .thingsweknow {
+                position: unset;
+                top: unset;
+                left: unset;
+            }
+
+            .bricks {
+                margin-bottom: 46px;
+            }
+
+            .new-work-background {
+                height: auto;
+                padding-bottom: 90px;
+            }
+
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .new-work-container {
+
+                width: auto;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .new-work-background {
+                background-image: none;
+                background-color: #17141d;
+                padding-left: var(--padvar);
+                padding-right: var(--padvar);
+            }
+
+            .new-work-background h2 {
+                padding-top: 80px;
+                font-size: 46px;
+                line-height: 1.2;
+            }
+
+            .stat,
+            .media,
+            .content {
+                width: 100%;
+            }
+
+            .stat {
+                margin-bottom: 1.9vw;
+            }
+
+            .content-two {
+                margin-top: 13vw;
+                display: block;
+                line-height: 1.3;
+            }
+
+            .content-one {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 780px) {
+            .stat {
+                margin-bottom: 2.4vw;
+            }
+        }
+
+        @media only screen and (max-width: 760px) {
+            .new-work-background {
+                background-image: none;
+                background-color: #17141d;
+            }
+
+            .new-work-container {
+                grid-template-columns: 1fr;
+                grid-gap: 100px
+            }
+
+            .stat,
+            .media,
+            .content {
+                width: 313px;
+            }
+
+            .content-two {
+                display: none;
+            }
+
+            .content-one {
+                display: block;
+            }
+
+        }
+
+        @media only screen and (max-width: 520px) {
+            .new-work-background h2 {
+                font-size: 32px;
+                margin-bottom: 50px;
+            }
+
+            .thingsweknow {
+                font-size: 28px;
+            }
+
+            .ourskills p {
+                line-height: 1.4;
+            }
+
+            .new-work-container {
+                grid-gap: 66px;
+            }
+
+            .buttonnew {
+                font-size: 1.15rem;
+                padding: 16px 28px;
+                margin-top: 80px;
+            }
+        }
+
+        @media only screen and (max-width: 430px) {
+
+            .stat,
+            .media,
+            .content {
+                width: 100%
+            }
+
+            .bricks {
+                margin-bottom: 38px;
+            }
+
+            .stat {
+                margin-bottom: 26px;
+            }
+        }
+
+        .magno {
+            z-index: -1;
+        }
+
+        .magno.animate__animated {
+            z-index: 190;
+        }
+
+        @media only screen and (max-width: 430px) {
+
+            .stat,
+            .media,
+            .content {
+                width: 100%
+            }
+
+            .bricks {
+                margin-bottom: 38px;
+            }
+
+            .stat {
+                margin-bottom: 26px;
+            }
+        }
+
+
+        @media only screen and (min-width: 520px) {
+            .new-work-background h2 span:after {
+                width: 98%;
+                height: 60px;
+                left: -3px;
+            }
+        }
+
+        @media only screen and (min-width: 1000px) {
+            .new-work-background h2 span:after {
+                height: 51px;
+            }
+        }
+
+
+        @media only screen and (min-width: 1500px) {
+            .new-work-background h2 span:after {
+                height: 3.125vw;
+            }
+        }
+
+        @media only screen and (min-width: 1850px) {
+            .new-work-background h2 span:after {
+                height: 58px;
+                width: 98%;
+                left: -4px;
+            }
+        }
+
+        .animate__fadeInT {
+            -webkit-animation-name: fadeInt;
+            animation-name: fadeInt
+        }
+
+        @-webkit-keyframes fadeInt {
+            0% {
+                opacity: 0
+            }
+
+            to {
+                opacity: .6
+            }
+        }
+
+        @keyframes fadeInt {
+            0% {
+                opacity: 0
+            }
+
+            to {
+                opacity: .6
+            }
+        }
+    </style>
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '337648337642528');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=337648337642528&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176414093-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176414093-1');
+    </script>
+    <!-- cookie popup -->
+    <div id="cp-bg"></div>
+    <div id="cp-content">
+        <div id="cp-content-header">Cookie-k használata a honlapon</div>
+        <div id="cp-content-text">Mint a legtöbb weboldal, az adamic.hu is használ cookie-kat, hogy kellemesebb felhasználói élményben legyen részed, amikor az oldalunkon jársz. A Hozzájárulok gomb megnyomásával elfogadod a cookie-k használatát. További tudnivalókat a cookie-król, és arról, hogy lehet ezeket kikapcsolni, az <a href="adatkezelesi-tajekoztato.pdf" target="_blank">adatkezelési tájékoztatóban </a> találsz.</div>
+        <div id="cp-content-btn" onclick="close_and_agree_cp();">Hozzájárulok</div>
+        <div class="cp-close-button" onclick="close_cp();"></div>
+    </div>
+    <script type="text/javascript">
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 6 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toGMTString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i].trim();
+                if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+            }
+            return "";
+        }
+
+        function close_and_agree_cp() {
+            document.getElementById("cp-content").style.display = 'none';
+            document.getElementById("cp-bg").style.display = 'none';
+            setCookie("cookie-permission", 1, 30);
+        }
+
+        function close_cp() {
+            document.getElementById("cp-content").style.display = 'none';
+            document.getElementById("cp-bg").style.display = 'none';
+        }
+
+        var tmp_cookie = getCookie("cookie-permission");
+        if (tmp_cookie != "" && tmp_cookie == "1") {
+            setCookie("cookie-permission", 1, 30);
+        } else {
+            document.getElementById("cp-content").style.display = 'block';
+            document.getElementById("cp-bg").style.display = 'block';
+        }
+    </script>
+    <!-- cookie popup end -->
+    <div class="main front">
+        <div class="da-line"></div>
+        <div class="mm">
+            <div class="mobile-menu">
+                <div class="moba">
+                </div>
+                <div class="menu-icon" onclick="openNav()">
+                    <div id="nav-icon1" class="greeee">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <a href="/" class="main-mob"><img src="img/adamic-logo-yellow.png" class="main-mob-logo-c" alt="Adamic logó"></a>
+            <div id="mySidenav" class="sidenav">
+                <a href="#rolunk" onclick="closeNav()" id="m-c" class="animated scroller">Rólunk</a>
+                <a href="#csapatunk" onclick="closeNav()" id="m-c-2" class="animated-2 scroller">Csapatunk</a>
+                <a href="#munkaink" onclick="closeNav()" id="m-c-3" class="animated-3 scroller">Munkáink</a>
+                <a href="/karrier" onclick="closeNav()" id="m-c-4" class="animated-4">Karrier</a>
+                <a href="#kapcsolat" onclick="closeNav()" id="m-c-5" class="animated-5 scroller">Kapcsolat</a>
+                <div id="m-c-6" class="social-logos-container animated-6 mobs">
+
+                    <a href="https://www.facebook.com/AdamicMedia" target="_blank" rel="noopener" onclick="closeNav()"><img style="width:24px;" src="img/dashicons--facebook-alt.svg" alt="Facebook logó"></a>
+                    <a href="https://www.linkedin.com/company/adamic/mycompany/?viewAsMember=true" target="_blank" rel="noopener" onclick="closeNav()"><img style="width:24px;" src="img/dashicons--linkedin.svg" alt="LinkedIn logó"></a>
+                    <a href="https://www.instagram.com/adamic_agency/" target="_blank" rel="noopener" onclick="closeNav()"><img style="width:23px; padding-top:3px;" src="img/dashicons--instagram.svg" alt="Instagram logó"></a>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="menu-top">
+            <div class="top-right-menu">
+                <a href="/karrier">Karrier</a>
+                <a href="#kapcsolat" class="scroller">Kapcsolat</a>
+                <div class="social-logos-container">
+                    <a href="https://www.facebook.com/AdamicMedia" target="_blank" rel="noopener"><img class="fb-logo" style="width:24px;" src="img/dashicons--facebook-alt.svg" alt="Facebook logó"></a>
+                    <a href="https://www.linkedin.com/company/adamic/mycompany/?viewAsMember=true" target="_blank" rel="noopener"><img class="li-logo" style="width:24px;" src="img/dashicons--linkedin.svg" alt="LinkedIn logó"></a>
+                    <a href="https://www.instagram.com/adamic_agency/" target="_blank" rel="noopener"><img class="in-logo" style="width:23px; padding-top:2px;" src="img/dashicons--instagram.svg" alt="Instagram logó"></a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="adamic-hero" id="hero">
+            <div class="menu-side">
+                <a href="#" class="adamic-logo"><img src="img/logo.png" class="logo" alt="Adamic-logo"></a>
+                <div class="side-menu">
+                    <a href="#rolunk" class="scroller">rólunk</a>
+                    <a href="#csapatunk" class="scroller">csapat</a>
+                    <a href="#munkak" class="scroller">munkák</a>
+                </div>
+                <img src="img/anoter-logo.png" class="another-logo" alt="Adamic logó">
+            </div>
+            <div class="adamic-movie">
+                <!--      <video autoplay playsinline muted poster="img/moblogo-2.jpg" class="mobvid" id="mvd">
+                <source src="adamic-intro-phone.webm"
+                type="video/webm">
+                <source src="adamic-intro-phone.mp4"
+                type="video/mp4"> 
+             </video>   -->
+                <img src="img/endlogo-3.png" class="mobvid mobpicad animate__animated animate__fadeIn animate__slower" alt="Adamic logó">
+                <p class="hellop animate__animated animate__fadeIn animate__slower">Adamic - Full service digitális ügynökség</p>
+                <a href="#munkaink" class="scroller m-a-button animate__animated animate__fadeInDown animate__delay-1s">Munkáink</a>
+                <video src="adamic-intro3.mp4?v4" autoplay playsinline muted poster="img/logo-abstract-55.jpg?v=2" class="pcvid">
+                </video>
+            </div>
+
+        </div>
+        <div class="whoweare" id="rolunk">
+            <div class="spacer"></div>
+            <div class="mug-carousel">
+                <div class="mug"><img src="img/mug.jpg" alt="adamic életképek"></div>
+                <div class="mug"><img src="img/asdf-carousel-1.jpg" alt="adamic életképek"></div>
+                <div class="mug"><img src="img/asdf-carousel-2.jpg" alt="adamic életképek"></div>
+                <div class="mug"><img src="img/asdf-carousel-3.jpg" alt="adamic életképek"></div>
+                <div class="mug"><img src="img/asdf-carousel-4.jpg" alt="adamic életképek"></div>
+            </div>
+            <div class="hello">
+                <div class="ada-mic">
+                    <h2>helló!</h2>
+                    <h3>
+                        mi vagyunk<br>az adamic</h3>
+                </div>
+                <p>Egy folyamatosan kísérletező és rohamos tempóban fejlődő full service digitális ügynökség. Egy
+                    lendületes és összetartó csapat, ahol folyton 120%-on pörögnek. Egy megbízható partner, aki segít
+                    neked, hogy mindenkivel megtaláld a közös hangot a digitális világban.</p>
+                <a href="#csapatunk" class="scroller">Ismerd meg <span class="w-white">a csapatot!</span></a>
+            </div>
+        </div>
+        <div class="linekeeper"> <img src="img/stripe-real-two.png" class="lines-up"></div>
+
+
+
+        <div class="new-work-background" style="position:relative;">
+            <video src="asdf-BG3.mp4" loop muted class="magno animate__slow" id="vid-m">
+            </video>
+            <h2>amihez a <span>legjobban</span> értünk</h2>
+            <div class="new-work-container">
+                <div class="ourskills">
+                    <h3 class="thingsweknow stat-th">Stratégia</h3>
+                    <img src="img/stat-3.png" alt="Stratégia" loading="lazy" class="bricks stat">
+                    <p>
+                        <b>Tartalomstratégia</b> rövid és hosszú távra
+                    </p>
+                    <p>
+                        <b>Online felületek</b> technikai, tartalmi és minőségi <b>elemzése</b>
+                    </p>
+                    <p>
+                        <b>Összehasonlító elemzés</b> versenytársak online megjelenéseiről
+                    </p>
+                    <p>
+                        <b>Felhasználói élmény</b> tervezése (UX)
+                    </p>
+                    <p>
+                        <b>Webdesign</b> és -tanácsadás
+                    </p>
+                    <p>
+                        <b>SEO</b>-tanácsadás
+                    </p>
+                    <p>
+                        <b>Branding</b> és marketing kommunikáció
+                    </p>
+                </div>
+                <div class="ourskills">
+                    <h3 class="thingsweknow media-th">Média</h3>
+                    <img src="img/media.png" alt="Média" loading="lazy" class="bricks media">
+                    <p>
+                        <b>PPC kampánystratégia, management és tanácsadás</b>
+                    </p>
+                    <p>
+                        <b>Médiatervezés</b> online és offline
+                    </p>
+                    <p>
+                        <b>Médiavásárlás</b> online és offline
+                    </p>
+                    <p>
+                        <b>Kampányelemzés</b>
+                    </p>
+                    <br>
+                    <P>Eszközök: Google Ads, Meta, Pinterest, TikTok, Programmatic vásárlás, Criteo, Natív hirdetések </P>
+                </div>
+                <div class="ourskills third">
+                    <h3 class="thingsweknow content-th">Tartalom</h3>
+                    <img src="img/content.png" alt="Tartalom" loading="lazy" class="bricks content">
+                    <span class="content-one">
+                        <p>
+                            <b>Szövegírás</b> és <b>kreatív gyártás</b> online és offline
+                        </p>
+                        <p>
+                            <b>Social media menedzsment</b>
+                        </p>
+                        <p>
+                            <b> Termékfotózás</b>
+                        </p>
+                        <p>
+                            <b>Videós</b> és <b>animált tartalmak</b> gyártása
+                        </p>
+                    </span>
+                </div>
+                <span class="content-two">
+                    <p>
+                        <b>Szövegírás</b> és <b>kreatív gyártás</b> online és offline
+                    </p>
+                    <p>
+                        <b>Social media menedzsment</b>
+                    </p>
+                    <p>
+                        <b> Termékfotózás</b>
+                    </p>
+                    <p>
+                        <b>Videós</b> és <b>animált tartalmak</b> gyártása
+                    </p>
+                </span>
+            </div>
+            <a href="#kapcsolat" class="buttonnew" id="workwithvideobutton" style="margin-bottom:0;">dolgozz velünk</a>
+        </div>
+
+   <section class="ari">
+
+
+  <div class="ari__hero">
+    <h2 class="ari__title ari__title--top">
+      Mennyit ér a márkád,<br class="d"> amikor már<br class="d"> nem emberek<br class="d"> döntenek?
+    </h2>
+    <h2 class="ari__title ari__title--bottom">
+      Megjelentél ma már<br class="d"> a ChatGPT-ben?
+    </h2>
+  </div>
+
+
+  <div class="ari__panel">
+    <div class="ari__group">
+      <p class="ari__text">
+        A hagyományos keresés és webes tájékozódás<br class="d">
+        helyett egyre többet a mesterséges intelligenciát<br class="d">
+        kérdezik meg a termékeidről és szolgáltatásaidról.
+      </p>
+      <p class="ari__text">
+        Az AI-döntéshozó pedig nem a lájkjaidat nézi,<br class="d">
+        hanem egészen más alapján dönt:<br class="d">
+        <strong>hogy számítasz-e egyáltalán.</strong>
+      </p>
+    </div>
+
+    <div class="ari__group ari__group--2">
+      <img class="ari__logo" src="img/ari-logo.png" alt="ARI – Adamic Relevance Index">
+      <p class="ari__text">
+        Mivel a klasszikus metrikák itt már nem működnek,<br class="d">
+        létrehoztuk az ARI-t (Adamic Relevance Index). Ez a saját<br class="d">
+        fejlesztésű mérőszám megmutatja, mennyire releváns a<br class="d">
+        márkád az AI-korszakban.
+      </p>
+      <a class="ari__btn ari__btn--dark" href="#">Mennyi az ARI-m?</a>
+    </div>
+  </div>
+
+<img src="img/ari-2.jpg" alt="Chat gpt illusztráció" loading="lazy" class="mobgpt">
+  <div class="ari__dark">
+    <div class="ari__lead">
+      <p class="ari__lead-light">Szeretnéd, ha a márkád<br class="d"> már most ott lenne,<span class="mobspan">ahol a vásárlóid a döntéseiket meghozzák?</span></p>
+      <p class="ari__lead-bold">ahol a vásárlóid<br class="d"> a döntéseiket meghozzák?</p>
+    </div>
+
+    <div class="ari__copy">
+      <p class="ari__text ari__text--s">2026-ban az OpenAI is belépett a hirdetési piacra:</p>
+      <p class="ari__text ari__text--s ari__text--gap">
+        a ChatGPT ingyenes és Go-előfizetéses felhasználói most<br class="d">
+        már hirdetéseket is látnak a válaszok alján, méghozzá<br class="d">
+        termék- és szolgáltatáskeresés közben, a döntés előtti<br class="d">
+        pillanatban – pontosan akkor, amikor a legnyitottabb rá.
+      </p>
+      <p class="ari__text ari__text--s">
+        Ez egy vadonatúj játéktér, ahol egészen más szabályok<br class="d">
+        érvényesek, mint a Google vagy a Meta felületein. Mi már<br class="d">
+        tudjuk, hogyan lehet kihozni belőle a maximumot, így<br class="d">
+        azonnal integráltuk az ügyfeleink stratégiájába.
+      </p>
+      <a class="ari__btn ari__btn--light" href="#">Beszéljünk a ChatGPT Ads-ről</a>
+    </div>
+  </div>
+
+</section>
+        <div class="img-con-adamic" id="munkak"><img src="img/adamic-works.jpg" class="adimg-work comp" alt="Legtuóbbi munkáink"></div>
+        <img src="img/latest-work2.jpg" class="adimg-work mob" alt="Legtuóbbi munkáink" id="munkaink">
+        <div class="works"><a href="arena-valentin-nap" style="text-decoration:none;">
+                <div class="big-work">
+                    <div class="work-one special">
+                        <img src="img/are-work-big.png" class="work" alt="munkák:Aréna">
+                        <div class="worktext">
+                            <h3>Arena Mall</h3>
+                            <p>A szerelem örök</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <div class="two-work">
+
+                <a href="/bioco-tengeri-landing" style="text-decoration:none;">
+                    <div class="work-one aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="top-bottom">
+                        <div class="container">
+                            <img src="img/ref-13-biocotengeri.jpg" class="work" alt="munkák:BioCo">
+                        </div>
+                        <div class="worktext">
+                            <h3>BioCo</h3>
+                            <p>Tengeri Termékcsalád Landing</p>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a href="/bioco-multivitamin" style="text-decoration:none;">
+                    <div class="work-two" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="top-bottom">
+                        <div class="container">
+                            <img src="img/adamaic-ref-12-bioco200.jpg" class="work" alt="munkák:Bioco Landing">
+
+                        </div>
+                        <div class="worktext">
+                            <h3>BioCo</h3>
+                            <p>Multivitamin 200% Landing</p>
+
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+
+
+
+            <div class="two-work">
+                <a href="dm-social" style="text-decoration:none;">
+                    <div class="work-one aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="top-bottom">
+                        <div class="container">
+                            <img src="img/dm-work.jpg" class="work" alt="munkák:DM">
+                        </div>
+                        <div class="worktext">
+                            <h3>dm</h3>
+                            <p>Vérfrissítés a dm Instagram felületén</p>
+
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="bioco-oszi-egeszsegkihivas" style="text-decoration:none;">
+                    <div class="work-two aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="top-bottom">
+                        <div class="container">
+                            <img src="img/adamaic-ref-10.jpg" class="work" alt="munkák:Bioco Őszi Egészség Kihívás">
+
+                        </div>
+                        <div class="worktext">
+
+                            <h3>BioCo</h3>
+                            <p>Őszi Egészség Kihívás</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div>
+
+
+
+
+                <div class="two-work">
+
+                    <a href="libri-konyvterkep" style="text-decoration:none;">
+                        <div class="work-one aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="top-bottom">
+                            <div class="container">
+                                <img src="img/adamaic-ref-9.jpg" class="work" alt="munkák:Libri">
+                            </div>
+                            <div class="worktext">
+                                <h3>Libri</h3>
+                                <p>Könyvtérkép - a könyv kapcsolat</p>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="dm-termektesztelok" style="text-decoration:none;">
+                        <div class="work-two" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="top-bottom">
+                            <div class="container">
+                                <img src="img/adamaic-ref-dmt.jpg" class="work" alt="munkák:DM terméktesztelők">
+
+                            </div>
+                            <div class="worktext">
+                                <h3>dm</h3>
+                                <p>terméktesztelők közössége csoport</p>
+
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="two-work">
+
+                    <a href="arena-karacsony" style="text-decoration:none;">
+                        <div class="work-one" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="top-bottom">
+                            <div class="container">
+                                <img src="img/adamaic-ref-are.jpg" class="work" alt="munkák:Arena Mall">
+                                <!--   <a class="overlay" href="https://www.google.com/">
+                    <div class="text">
+                        <p>Brand strategy</p>
+                        <p>Klímakutatás</p>
+                        <p>Trend setting</p>
+                    </div>
+                </a>-->
+                            </div>
+                            <div class="worktext">
+                                <h3>Arena Mall</h3>
+                                <p>Karácsony a "rossz" gyerekeknek</p>
+                            </div>
+                        </div>
+
+                    </a>
+                    <a href="cooper-vision" style="text-decoration:none;">
+                        <div class="work-two" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="top-bottom">
+                            <div class="container">
+                                <img src="img/adamaic-ref-1.jpg" class="work" alt="munkák:Cooper Vision">
+                                <!-- <a class="overlay" href="https://www.google.com/">
+            <div class="text">
+                <p>Brand strategy</p>
+                <p>Klímakutatás</p>
+                <p>Trend setting</p>
+            </div>
+        </a>-->
+                            </div>
+                            <div class="worktext">
+                                <h3>Cooper Vision</h3>
+                                <p>CooperVision Edukációs Kihívás</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <a href="arena-social" style="text-decoration:none;">
+                    <div class="two-work">
+
+                        <div class="work-one" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="top-bottom">
+                            <div class="container">
+                                <img src="img/adamaic-ref-5.jpg" class="work" alt="munkák:Arena Mall">
+                                <!--   <a class="overlay" href="https://www.google.com/">
+            <div class="text">
+                <p>Brand strategy</p>
+                <p>Klímakutatás</p>
+                <p>Trend setting</p>
+            </div>
+        </a>-->
+                            </div>
+                            <div class="worktext">
+                                <h3>Arena Mall</h3>
+                                <p>Digitális divatmagazin Facebookon</p>
+                            </div>
+                        </div>
+                </a>
+            </div>
+        </div>
+        <div class="buttonholder">
+            <a href="#kapcsolat" class="button button13 scroller" data-aos="zoom-out">Dolgozz velünk</a>
+        </div>
+    </div>
+    <div class="h-holder"><img src="img/happy-clients.png" class="happy-clients" alt="legboldogabb ügyfeleink">
+    </div>
+    <div class="adamic-clients">
+        <div class="logo-container"><img src="img/logos/logo-7.jpg" loading="lazy" class="work-logo" alt="referenciák: DM"></div>
+        <div class="logo-container"><img src="img/logos/logo-mt.jpg" loading="lazy" class="work-logo" alt="referenciák: Madame Tussauds"></div>
+        <div class="logo-container"><img src="img/logos/logo-3.jpg" loading="lazy" class="work-logo" alt="referenciák: Arena Mall"></div>
+        <div class="logo-container"><img src="img/logos/logo-bem.jpg" loading="lazy" class="work-logo" alt="referenciák: Beurer"></div>
+        <div class="logo-container"><img src="img/logos/logo-time-2.jpg" loading="lazy" class="work-logo" alt="referenciák: Next Time"></div>
+        <div class="logo-container"><img src="img/logos/logo-2.jpg" loading="lazy" class="work-logo" alt="referenciák: Épkar Zrt"></div>
+        <div class="logo-container"><img src="img/logos/logo-polus.jpg" loading="lazy" class="work-logo" alt="referenciák: Pólus Irodaház"></div>
+        <div class="logo-container"><img src="img/logos/logo-radnoti.jpg" loading="lazy" class="work-logo" alt="referenciák: Radnóti Színház"></div>
+        <div class="logo-container"><img src="img/logos/logo-dr-optic.jpg" loading="lazy" class="work-logo" alt="referenciák: Dr Optik"></div>
+        <div class="logo-container"><img src="img/logos/logo-zeiss.jpg" loading="lazy" class="work-logo" alt="referenciák: Zeiss"></div>
+        <div class="logo-container"><img src="img/logos/logo-1.jpg" loading="lazy" class="work-logo" alt="referenciák: Rentingo"></div>
+        <div class="logo-container"><img src="img/logos/logo-4.jpg" loading="lazy" class="work-logo" alt="referenciák: Knoppers"></div>
+        <div class="logo-container"><img src="img/logos/logo-5.jpg" loading="lazy" class="work-logo" alt="referenciák: Bayer"></div>
+        <div class="logo-container"><img src="img/logos/logo-6.jpg" loading="lazy" class="work-logo" alt="referenciák: Infiniti"></div>
+        <div class="logo-container"><img src="img/logos/logo-8.jpg" loading="lazy" class="work-logo" alt="referenciák: Bosch"></div>
+        <div class="logo-container"><img src="img/logos/logo-9.jpg" loading="lazy" class="work-logo" alt="referenciák: UPC"></div>
+        <div class="logo-container"><img src="img/logos/logo-10.jpg" loading="lazy" class="work-logo" alt="referenciák: Pécsi Sör"></div>
+        <div class="logo-container"><img src="img/logos/logo-11.jpg" loading="lazy" class="work-logo" alt="referenciák: Cooper Vision"></div>
+        <div class="logo-container"><img src="img/logos/logo-12.jpg" loading="lazy" class="work-logo" alt="referenciák: Bookline"></div>
+        <div class="logo-container"><img src="img/logos/logo-13.jpg" loading="lazy" class="work-logo" alt="referenciák: Optimum Szemészet"></div>
+        <div class="logo-container"><img src="img/logos/logo-14.jpg" loading="lazy" class="work-logo" alt="referenciák: Danubio"></div>
+        <div class="logo-container"><img src="img/logos/logo-15.jpg" loading="lazy" class="work-logo" alt="referenciák: Libri"></div>
+        <div class="logo-container"><img src="img/logos/logo-16.jpg" loading="lazy" class="work-logo" alt="referenciák: MagnaPharm"></div>
+        <div class="logo-container"><img src="img/logos/logo-20.jpg" loading="lazy" class="work-logo" alt="referenciák: Art Masters"></div>
+        <div class="logo-container"><img src="img/logos/logo-21.jpg" loading="lazy" class="work-logo" alt="referenciák: Cadterv"></div>
+        <div class="logo-container"><img src="img/logos/logo-22.jpg" loading="lazy" class="work-logo" alt="referenciák: Euronet"></div>
+        <div class="logo-container"><img src="img/logos/logo-23.jpg" loading="lazy" class="work-logo" alt="referenciák: Libri"></div>
+        <div class="logo-container"><img src="img/logos/logo-24.jpg" loading="lazy" class="work-logo" alt="referenciák: Pharmaroad"></div>
+        <div class="logo-container"><img src="img/logos/logo-25.jpg" loading="lazy" class="work-logo" alt="referenciák: Pszota Builder Kft."></div>
+    </div>
+    <span id="csapatunk" class="teamspan"></span>
+    <div class="gettoknowus">
+        <h2>Ismerd meg<br>a csapatunkat
+        </h2>
+        <div class="tab">
+            <button class="tablinks" onclick="openDepartment(event, 'Projekt')" id="defaultOpen">Project management</button>
+            <button class="tablinks" onclick="openDepartment(event, 'Marketing')">Production</button>
+            <button class="tablinks" onclick="openDepartment(event, 'Production')">Leadership</button>
+        </div>
+    </div>
+    <div id="tabstop" style="visibility: hidden;"></div>
+    <div class="moblinks tablinks active" onclick="openDepartment(event, 'Projekt')" id="defaultOpenM">Project management
+    </div>
+    <div id="Projekt" class="tabcontent tabcontentM">
+        <div class="card-container">
+
+            <!-- <div class="inner-part">
+                    <img src="img/people/morvai.jpg" loading="lazy" class="employee" alt="munkatársak:Morvai Éva">
+                    <div class="card-outer">
+                        <p>Morvai Éva</p>
+                        <p class="what-manager">project and media manager</p>
+                        <a href="mailto:evi.morvai@adamic.hu">evi.morvai@<br>adamic.hu</a>
+                    </div>
+                </div>-->
+            <!--   <div class="inner-part">
+                    <img src="img/people/nemeth3.jpg" loading="lazy" class="employee" alt="munkatársak:Németh Krisztina">
+                    <div class="card-outer">
+                        <p>Németh Krisztina</p>
+                     <p class="what-manager">project manager</p>
+                        <a href="mailto:krisztina.nemeth@adamic.hu">krisztina.nemeth@<br>adamic.hu</a>
+                    </div>
+                </div>
+               <div class="inner-part">
+                    <img src="img/people/kerekgyarto.jpg" loading="lazy" class="employee" alt="munkatársak:Kerékgyártó Réka">
+                    <div class="card-outer">
+                        <p>Kerékgyártó Réka</p>
+                      <p class="what-manager">project manager</p>
+                        <a href="mailto:reka.kerekgyarto@adamic.hu">reka.kerekgyarto@<br>adamic.hu</a>
+                    </div>
+                </div>-->
+            <!--  <div class="inner-part">
+                    <img src="img/people/szantho.jpg" loading="lazy" class="employee" alt="munkatársak:Szánthó Réka">
+                    <div class="card-outer">
+                        <p>Szánthó Réka</p>
+                     <p class="what-manager">project manager</p>
+                     <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>  
+                    </div>
+                </div>-->
+            <!--     <div class="inner-part">
+                    <img src="img/people/danko.jpg?v4" loading="lazy" class="employee" alt="munkatársak:Dankó Réka">
+                    <div class="card-outer">
+                        <p>Dankó Réka</p>
+                      <p class="what-manager">project manager</p>
+                      <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>  
+                    </div>
+                </div>
+                <div class="inner-part">
+                    <img src="img/people/szivak-barna.jpg" loading="lazy" class="employee" alt="munkatársak:Szivák Barna">
+                    <div class="card-outer">
+                        <p>Szivák Barna</p>
+                     <p class="what-manager">project manager</p>
+                     <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>  
+                    </div>
+                </div>
+            
+            
+            -->
+
+            <div class="inner-part">
+                <img src="img/people/modis.jpg" loading="lazy" class="employee" alt="munkatársak:Molnár Dorka">
+                <div class="card-outer">
+                    <p>Molnár Dorka</p>
+                    <p class="what-manager">digital project manager</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+
+           <div class="inner-part">
+                <img src="img/people/vigh.jpg" loading="lazy" class="employee" alt="munkatársak:Vigh Alexandra">
+                <div class="card-outer">
+                    <p>Vigh Alexandra</p>
+                    <p class="what-manager">project manager</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+
+            
+            <div class="inner-part">
+                <img src="img/people/darazs.jpg" loading="lazy" class="employee" alt="munkatársak:Darázs-Szabó Lili">
+                <div class="card-outer">
+                    <p>Darázs-Szabó Lili</p>
+                    <p class="what-manager">digital project manager</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+
+            <div class="inner-part">
+                <img src="img/people/bibercz-anett.jpg" loading="lazy" class="employee" alt="munkatársak:Bibercz Anett">
+                <div class="card-outer">
+                    <p>Bibercz Anett</p>
+                    <p class="what-manager">project manager</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <div class="moblinks tablinks" onclick="openDepartment(event, 'Marketing');scrollToTop('tabstop');">Production
+    </div>
+    <div id="Marketing" class="tabcontent tabcontentM">
+        <div class="card-container">
+
+
+            <!--    <div class="inner-part">
+                    <img src="img/people/szopko.jpg" loading="lazy" class="employee" alt="munkatársak:Szopkó Zita">
+                    <div class="card-outer">
+                        <p>Szopkó Zita</p>
+                     <p class="what-manager">copywriter</p>
+                        <a href="mailto:zita.szopko@adamic.hu">zita.szopko@<br>adamic.hu</a>
+                    </div> 
+            
+                <div class="inner-part">
+                    <img src="img/people/somfai.jpg" loading="lazy" class="employee" alt="munkatársak:Somfai Kristóf">
+                    <div class="card-outer">
+                        <p>Somfai Kristóf</p>
+                      <p class="what-manager">creative strategy manager</p>
+                        <a href="mailto:kristof.somfai@adamic.hu">kristof.somfai@<br>adamic.hu</a>
+                    </div>
+                </div>-->
+
+
+
+
+
+            <div class="inner-part">
+                <img src="img/people/kollar.jpg" loading="lazy" class="employee" alt="munkatársak:Kollár Attila">
+                <div class="card-outer">
+                    <p>Kollár Attila</p>
+                    <p class="what-manager">PPC & SEO manager</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+
+            <!--   <div class="inner-part">
+                    <img src="img/people/reich.jpg" loading="lazy" class="employee" alt="Reich Lilla">
+                    <div class="card-outer">
+                        <p>Reich Lilla</p>
+                    <p class="what-manager">copywriter</p>
+                        <a href="mailto:lilla.reich@adamic.hu">lilla.reich@<br>adamic.hu</a>
+                    </div>
+                </div> -->
+            <div class="inner-part">
+                <img src="img/people/big-banoczy.jpg" loading="lazy" class="employee" alt="Bánóczy Liza">
+                <div class="card-outer">
+                    <p>Bánóczy Liza</p>
+                    <p class="what-manager">PPC manager</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+
+            <!--    <div class="inner-part">
+                    <img src="img/people/szokoly-alexandra.jpg" loading="lazy" class="employee" alt="Szokolyi Alexandra">
+                    <div class="card-outer">
+                        <p>Szokolyi Alexandra</p>
+                    <p class="what-manager">social media manager</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>  
+                    </div>
+                </div> 
+
+           <div class="inner-part">
+                    <img src="img/people/kiss-dozsai-flora.jpg" loading="lazy" class="employee" alt="Kiss - Dózsai Flóra">
+                    <div class="card-outer">
+                        <p>Kiss - Dózsai Flóra</p>
+                    <p class="what-manager">szövegíró és social media manager</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>  
+                    </div>
+                </div> 
+
+                <div class="inner-part">
+                    <img src="img/people/bodor-krisztian.jpg" loading="lazy" class="employee" alt="Bodor Krisztián">
+                    <div class="card-outer">
+                        <p>Bodor Krisztián</p>
+                    <p class="what-manager">fotós és videós tartalomgyártási manager</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>  
+                    </div>
+                </div> -->
+
+            <div class="inner-part">
+                <img src="img/people/bagyinszki-valeria.jpg" loading="lazy" class="employee" alt="Bagyinszki Valéria">
+                <div class="card-outer">
+                    <p>Bagyinszki Valéria</p>
+                    <p class="what-manager">motion and graphic designer</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+
+            <!--<div class="inner-part">
+                <img src="img/people/bendi-o.jpg" loading="lazy" class="employee" alt="Kiss Benedek">
+                <div class="card-outer">
+                    <p>Kiss Benedek</p>
+                    <p class="what-manager">junior art director</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>-->
+
+            <!--<div class="inner-part">
+                <img src="img/people/nemethf.jpg" loading="lazy" class="employee" alt="munkatársak:Németh Flóra">
+                <div class="card-outer">
+                    <p>Németh Flóra</p>
+                    <p class="what-manager">copywriter and social media manager</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>-->
+
+            <div class="inner-part">
+                <img src="img/people/bordacs3.jpg" loading="lazy" class="employee" alt="munkatársak:Bordács Fanni">
+                <div class="card-outer">
+                    <p>Bordács Fanni</p>
+                    <p class="what-manager">graphic designer</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+
+            <div class="inner-part">
+                <img src="img/people/zavodni3.jpg" loading="lazy" class="employee" alt="munkatársak:Zavodni Réka">
+                <div class="card-outer">
+                    <p>Zavodni Réka</p>
+                    <p class="what-manager">copywriter</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+
+
+                 <div class="inner-part">
+                <img src="img/people/banyai.jpg" loading="lazy" class="employee" alt="munkatársak:Bányai Zsófi">
+                <div class="card-outer">
+                    <p>Bányai Zsófi</p>
+                    <p class="what-manager">junior art director</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+
+            
+            <div class="inner-part">
+                <img src="img/people/szoke.jpg" loading="lazy" class="employee" alt="munkatársak:Szőke Anna">
+                <div class="card-outer">
+                    <p>Szőke Anna</p>
+                    <p class="what-manager">junior szövegíró</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+
+               <div class="inner-part">
+                <img src="img/people/gulyas.jpg" loading="lazy" class="employee" alt="munkatársak:Gulyás Lilla">
+                <div class="card-outer">
+                    <p>Gulyás Lilla</p>
+                    <p class="what-manager">junior stratéga</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+
+
+         <!--  <div class="inner-part">
+                <img src="img/people/safar.jpg" loading="lazy" class="employee" alt="munkatársak:Sáfár Attila">
+                <div class="card-outer">
+                    <p>Sáfár Attila</p>
+                    <p class="what-manager">front-end developer</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    <div class="moblinks tablinks" onclick="openDepartment(event, 'Production');scrollToTop('tabstop');">Leadership
+    </div>
+    <div id="Production" class="tabcontent tabcontentM">
+        <div class="card-container">
+            <div class="inner-part">
+                <img src="img/people/herczeg5.jpg" loading="lazy" class="employee" alt="munkatársak:Herczeg Flóra">
+                <div class="card-outer">
+                    <p>Herczeg Flóra</p>
+                    <p class="what-manager">tulajdonos és stratégiai vezető</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+            <div class="inner-part">
+                <img src="img/people/pastyik-1.jpg" loading="lazy" class="employee" alt="munkatársak:Bajagic Renáta">
+                <div class="card-outer">
+                    <p>Bajagic Renáta</p> 
+                    <p class="what-manager">cégvezető</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+
+            <div class="inner-part">
+                <img src="img/people/konyves.jpg" loading="lazy" class="employee" alt="munkatársak:Könyves Viktor">
+                <div class="card-outer">
+                    <p>Könyves Viktor</p>
+                    <p class="what-manager">média stratégiai tanácsadó</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+
+
+            <!--<div class="inner-part">
+                <img src="img/people/nagy.jpg" loading="lazy" class="employee" alt="munkatársak:Nagy Krisztina">
+                <div class="card-outer">
+                    <p>Nagy Krisztina</p>
+                    <p class="what-manager">head of digital</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>-->
+
+            <div class="inner-part">
+                <img src="img/people/lippert3.jpg" loading="lazy" class="employee" alt="munkatársak:Lippert Gábor">
+                <div class="card-outer">
+                    <p>Lippert Gábor</p>
+                    <p class="what-manager">visual team leader</p>
+                    <a href="mailto:hello@adamic.hu"><img src="img/mail.svg" alt="email küldése" class="mail"></img></a>
+                </div>
+            </div>
+            <!--         <div class="inner-part">
+                    <img src="img/people/gonczi.jpg" loading="lazy" class="employee" alt="munkatársak:Gönci Gábor">
+                    <div class="card-outer">
+                        <p>Gönci Gábor</p>
+                        <p class="what-manager">creative director</p>
+                        <a href="mailto:gabor.gonci@adamic.hu">gabor.gonci@<br>adamic.hu</a>
+                    </div>
+                </div>-->
+        </div>
+    </div>
+    <img src="img/w-adamic.jpg" class="adimg" alt="Ilyen az Adamic">
+    <div class="adamic-story">
+        <div class="story">
+            <img src="img/lifeof-1.jpg" class="insta" alt="Adamic életképek">
+            <div class="whathappened">
+                <a href=""></a>
+                <p></p>
+            </div>
+        </div>
+        <div class="story">
+            <img src="img/lifeof-2.jpg" class="insta" alt="Adamic életképek">
+            <div class="whathappened">
+                <a href=""></a>
+                <p></p>
+            </div>
+        </div>
+        <div class="story">
+            <img src="img/lifeof-3.jpg" class="insta" alt="Adamic életképek">
+            <div class="whathappened">
+                <a href=""></a>
+                <p></p>
+            </div>
+        </div>
+        <div class="story">
+            <img src="img/lifeof-4.jpg" class="insta" alt="Adamic életképek">
+            <div class="whathappened">
+                <a href=""></a>
+                <p></p>
+            </div>
+        </div>
+        <div class="story">
+            <img src="img/lifeof-5.jpg" class="insta" alt="Adamic életképek">
+            <div class="whathappened">
+                <a href=""></a>
+                <p></p>
+            </div>
+        </div>
+        <div class="story">
+            <img src="img/lifeof-6.jpg" class="insta" alt="Adamic életképek">
+            <div class="whathappened">
+                <a href=""></a>
+                <p></p>
+            </div>
+        </div>
+        <div class="story">
+            <img src="img/lifeof-7.jpg" class="insta" alt="Adamic életképek">
+            <div class="whathappened">
+                <a href=""></a>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="adamic-story-mobile">
+        <div class="visible-part">
+            <div class="story">
+                <img src="img/lifeof-1.jpg" class="insta" alt="Adamic életképek">
+                <div class="whathappened">
+                    <a href=""></a>
+                    <p></p>
+                </div>
+            </div>
+            <div class="story">
+                <img src="img/lifeof-2.jpg" class="insta" alt="Adamic életképek">
+                <div class="whathappened">
+                    <a href=""></a>
+                    <p></p>
+                </div>
+            </div>
+            <div class="story">
+                <img src="img/lifeof-3.jpg" class="insta" alt="Adamic életképek">
+                <div class="whathappened">
+                    <a href=""></a>
+                    <p></p>
+                </div>
+            </div>
+            <div class="story">
+                <img src="img/lifeof-4.jpg" class="insta" alt="Adamic életképek">
+                <div class="whathappened">
+                    <a href=""></a>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <span id="n-v-p" style="position: relative; top:0px; visibility:hidden;"></span>
+        <div class="not-visible-part" style="display:none;">
+            <div class="story">
+                <img src="img/lifeof-5.jpg" class="insta" alt="Adamic életképek">
+                <div class="whathappened">
+                    <a href=""></a>
+                    <p></p>
+                </div>
+            </div>
+            <div class="story">
+                <img src="img/lifeof-6.jpg" class="insta" alt="Adamic életképek">
+                <div class="whathappened">
+                    <a href=""></a>
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="buttonholder">
+            <button class="revealer" onclick="scrollToThere('n-v-p');">Több történet</button>
+        </div>
+    </div>
+    <div class="buttonholder bottom-button">
+        <a class="button button13 black" href="https://www.instagram.com/adamic_agency/" target="_blank">Kövess minket!</a>
+    </div>
+    <script src="includes/jquery-3.5.1.min.js"></script>
+    <?php include('inc_contact.php'); ?>
+    </div>
+    <footer></footer>
+    <script src="includes/main.js"></script>
+    <script src="includes/menu.js"></script>
+    <script src="includes/aos.js"></script>
+    <script src="includes/slick.min.js"></script>
+    <script src="includes/slick-init.js"></script>
+    <script>
+        $(window).on('load', function() {
+            AOS.refresh();
+        });
+        $(function() {
+            AOS.init({
+                disable: 'mobile'
+            });
+        });
+
+        window.onload = function() {
+            const vids = document.getElementById("vid-m");
+            const vidButton = document.getElementById("workwithvideobutton");
+
+            vids.style.opacity = "0";
+
+            vidButton.addEventListener(`mouseover`, function(e) {
+                vids.play()
+                /* vids.style.opacity = ".9";*/
+                vids.classList.add('animate__animated', 'animate__fadeInT');
+            })
+            vidButton.addEventListener(`mouseout`, function(e) {
+                vids.pause()
+                /*vids.style.opacity = "0";*/
+                vids.classList.remove('animate__animated', 'animate__fadeInT');
+            })
+        }
+
+     
+;(() => {
+  const MOBILE_MAX = 1000;  // same breakpoint as your CSS
+  const OFFSET     = 0;     // optical fine-tuning in px (+ moves the panel text down)
+  const MAX_SHIFT  = 150;   // safety clamp in px, both directions
+
+  const heading = document.querySelector('.ari__title--top');
+  const panel   = document.querySelector('.ari__panel');
+  if (!heading || !panel) return;
+
+  const group    = panel.querySelector('.ari__group');   // top text block of the panel
+  const textHost = group && group.lastElementChild;      // <p> with "hogy számítasz-e egyáltalán."
+  if (!textHost) return;
+
+  const mq = window.matchMedia(`(max-width: ${MOBILE_MAX}px)`);
+
+  /* Y position (viewport coords) of the baseline of the LAST line of an element.
+     A zero-size inline-block sits exactly on the baseline of the line it ends up on,
+     so its bottom edge = that line's baseline. It is removed right after measuring. */
+  function lastLineBaseline(host) {
+    const probe = document.createElement('span');
+    probe.style.cssText =
+      'display:inline-block;width:0;height:0;padding:0;margin:0;border:0;' +
+      'vertical-align:baseline;pointer-events:none;';
+    host.appendChild(probe);
+    const y = probe.getBoundingClientRect().bottom;
+    probe.remove();
+    return y;
+  }
+
+  function align() {
+    group.style.marginTop = '';            // reset, so we always measure from the neutral state
+    if (mq.matches) return;                // stacked mobile layout: nothing to align
+
+    const diff  = lastLineBaseline(heading) - lastLineBaseline(textHost) + OFFSET;
+    const shift = Math.max(-MAX_SHIFT, Math.min(MAX_SHIFT, diff));
+
+    group.style.marginTop = (Math.round(shift * 10) / 10) + 'px';  // negative values are fine
+  }
+
+  /* coalesce multiple triggers into one measurement per frame */
+  let raf = 0;
+  const schedule = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(align); };
+
+  if ('ResizeObserver' in window) {
+    new ResizeObserver(schedule).observe(heading);
+    new ResizeObserver(schedule).observe(panel);
+  }
+  window.addEventListener('resize', schedule);
+  window.addEventListener('load', schedule);
+  if (mq.addEventListener) mq.addEventListener('change', schedule);
+  else if (mq.addListener) mq.addListener(schedule);   // Safari ≤ 13
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(schedule);
+
+  schedule();
+})();
+
+    </script>
+</body>
+
+</html>
